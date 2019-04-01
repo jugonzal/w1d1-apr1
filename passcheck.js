@@ -23,6 +23,12 @@ for (i = 0; i < password.length; i++) {
 }
 
 // - at least one number
+for (i = 0; i < password.length; i++) {
+	if ("1234567890".includes(password[i])) {
+		console.log("Password has Numbers! Even better")
+	}
+}
+
 // - at least one upper case
 // - should be unique
 // - should be memorable 
