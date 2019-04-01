@@ -15,6 +15,13 @@ if (password.length >= 8) {
 }
 
 // - at least one of them should be a special character (!@#$)
+
+for (i = 0; i < password.length; i++) {
+	if ("!@#$%^&*()_+".includes(password[i])) {
+		console.log("Password has special characters! Awesome")
+	}
+}
+
 // - at least one number
 // - at least one upper case
 // - should be unique
